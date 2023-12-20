@@ -31,6 +31,7 @@ function transform(arr) {
 	if (result[0] === doublePrev || result[0] === discardPrev) { 
 		result.shift();
 	}
+	
 	result.forEach(elem => {
 		if (elem === doubleNext) {
 			result.splice(result.indexOf(doubleNext), 1, result.indexOf(doubleNext) + 1);
